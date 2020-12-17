@@ -51,7 +51,6 @@ public class DetectObject{
                         // Center crop the image to the largest square possible
                         // Rotation counter-clockwise in 90 degree increments
                         .add(new ResizeOp(1440,1080 , ResizeOp.ResizeMethod.BILINEAR))
-//                        .add(new Rot90Op(180))
                         .build();
 
         TensorImage image = new TensorImage(DataType.UINT8);
@@ -100,23 +99,16 @@ public class DetectObject{
                 switch (text) {
                     case "background":
                         feature = "Wrench";
-
-
                         break;
                     case "b'Hammer'":
                         feature = "Wrench Head";
-
                         break;
                     case "b'Wrench'":
                         feature = "Hammer";
-
                         break;
                     case "b'Wrench_Head'":
                         feature = "Reference";
                 }
-//                if(confidence < 0.5){
-//                    feature = "Not Identified";
-//                }
                 probability = String.valueOf(confidence);
             }
         }
