@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.tool_identification.R;
 
-
 public class SettingsFrag extends Fragment {
     //Variables
     TextView textView;
@@ -30,8 +29,6 @@ public class SettingsFrag extends Fragment {
                              Bundle savedInstanceState){
         //This inflates the layout
         View view = inflater.inflate(R.layout.frag_settings,container,false);
-
-
         return view;
     }
 }
