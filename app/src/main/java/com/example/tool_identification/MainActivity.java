@@ -64,21 +64,6 @@ public class MainActivity extends AppCompatActivity {
         }
             return false;
 
-/*        switch (item.getItemId()) {
-            case R.id.bottomNavHomeId:
-                frag = new HomeFrag();
-                loadFrag(frag);
-                return true;
-            case R.id.bottomNavCameraId:
-                frag = new CamFrag();
-                loadFrag(frag);
-                return true;
-            case R.id.bottomNavHelpId:
-                frag = new HelpFrag();
-                loadFrag(frag);
-                return true;
-        }
-        return false;*/
     };
 
     private void loadFrag(Fragment frag) {
@@ -87,6 +72,5 @@ public class MainActivity extends AppCompatActivity {
         trans.addToBackStack(null);
         trans.commit();
     }
-
 
 }
