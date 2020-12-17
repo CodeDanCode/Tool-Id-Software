@@ -21,8 +21,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
     private ActionBar navBar;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.frag_holder,
                     new HomeFrag()).commit();
         }
-
-
-
 
     }
 
@@ -63,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
             return false;
-
     };
 
     private void loadFrag(Fragment frag) {
@@ -72,5 +66,4 @@ public class MainActivity extends AppCompatActivity {
         trans.addToBackStack(null);
         trans.commit();
     }
-
 }
