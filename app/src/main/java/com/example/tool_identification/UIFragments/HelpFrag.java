@@ -36,6 +36,4 @@ public class HelpFrag extends Fragment {
         return view;
     }
 
-
-
 }
